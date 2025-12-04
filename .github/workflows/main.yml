@@ -1,0 +1,35 @@
+name: CI Build - WWI-API
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+
+
+    - name: Setup .NET
+
+
+    - name: Restore dependencies
+
+
+    - name: Build solution
+
+
+    - name: Check code formatting
+
+
+    - name: Publish build output
+
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: api-artifact
+        path: ./publish
